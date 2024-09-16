@@ -7,6 +7,10 @@ This project contains source code and supporting files for a serverless applicat
 - hello-world/tests - Unit tests for the application code. 
 - template.yaml - A template that defines the application's AWS resources.
 
+Application Flow:
+This application deals with json data which is sent over POST request body entity. The application expects a user json object with one particular field "active". The further processing is done over that field and the state is sent to user as a json response.
+The application provides abundant flexibility over data processing that can be done with a huge space for improvement.
+
 The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
 
 If you prefer to use an integrated development environment (IDE) to build and test your application, you can use the AWS Toolkit.  
